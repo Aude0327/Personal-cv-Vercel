@@ -147,7 +147,7 @@ export const experience: Experience[] = [
     role: "Student Assistant",
     organization: "Cash-for-Work Program (DSWD), Institute of Computing (IC)",
     period: "2024 · three months",
-    summary: "Served as a student assistant through the DSWD Cash-for-Work Program at the Institute of Computing.",
+    summary: "Served as a student assistant through the DSWD Cash-for-Work Program at the Institute of Computing at Davao del Norte State College.",
   },
   {
     role: "Sales Clerk",
@@ -205,7 +205,7 @@ export const project = {
   status: "Finished project",
   image: {
     src: "/images/SS-personal-cv.png",
-    alt: "Screenshot of the personal CV website project",
+    alt: "Screenshot of the personal CV website project on Github",
     label: "Personal CV Website photo",
     objectFit: "cover",
     objectPosition: "center top",

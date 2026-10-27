@@ -4,7 +4,7 @@ import { useReveal } from "../hooks/useReveal";
 interface RevealProps {
   children: ReactNode;
   className?: string;
-  /** Delay in milliseconds, used to stagger neighbouring cards. */
+  /** Delay in milliseconds*/
   delay?: number;
 }
 

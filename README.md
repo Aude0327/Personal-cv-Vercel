@@ -35,14 +35,6 @@ https://github.com/Aude0327/Personal-cv-Vercel
 - Keyboard accessible: skip link, visible focus states, semantic HTML
 - Respects the "reduce motion" setting
 
-## Editing Content
-
-Everything is in **`src/data/content.ts`**: text, dates, links, skills and experience. Components do not need to change.
-
-## Project Link
-
-The Personal CV Website card shows "Coming soon" until `project.repoUrl` in `content.ts` is set. After your repository is public, replace `null` with its URL.
-
 ## Project Structure
 
 ```

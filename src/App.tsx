@@ -148,7 +148,7 @@ export default function App() {
           id="achievements"
           kicker="06 · Achievements"
           title="Achievements and activities"
-          intro="Experiences I am proud to be a part of."
+          intro="Experiences I am proud to achieve and be part of."
         >
           <div className="grid grid--2">
             {achievements.map((item, index) => (

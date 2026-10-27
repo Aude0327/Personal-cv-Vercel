@@ -1,12 +1,10 @@
-# Personal CV Website (Profile 2)
+# Personal CV Website
 
 A calm, minimal personal CV website for **Aude Mar Hyra V. Busaco**, a 4th-year BSIT student at Davao del Norte State College, based in Panabo City, Davao del Norte, Philippines. Built as a course assignment.
 
 ## Live Website
 
-**ADD AFTER DEPLOYMENT** (paste the public Vercel site URL here)
-
-> `https://vercel.com/aude0327` is the Vercel account dashboard, not the deployed website.
+https://personal-cv-vercel-sigma.vercel.app
 
 ## GitHub Repository
 

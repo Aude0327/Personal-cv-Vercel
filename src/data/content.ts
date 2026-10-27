@@ -1,20 +1,6 @@
 /**
  * ALL WEBSITE CONTENT LIVES IN THIS FILE.
  * Edit text, links and dates here. You do not need to touch the components.
- *
- * ──────────────────────────────────────────────────────────────
- * IMAGES: ONLY TWO IMAGE SLOTS EXIST ON THIS SITE
- *   1. profile.portrait      (hero / profile section)
- *   2. nstpFeedingProgram.image  (NSTP Feeding Program card, May 2024)
- *
- * To add a real picture:
- *   a. Copy the file into  public/images/
- *      e.g.  public/images/profile.jpg   and   public/images/nstp-feeding.jpg
- *   b. Replace `src: null` with the path, e.g.  src: "/images/profile.jpg"
- *   c. Rewrite `alt` so it describes the real photo.
- *   d. Optional: change objectPosition (e.g. "center top" keeps a face in frame)
- *      and objectFit ("cover" fills the frame, "contain" shows the whole photo).
- * ──────────────────────────────────────────────────────────────
  */
 
 export interface ImageSlotData {

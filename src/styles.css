@@ -711,83 +711,10 @@ a:hover {
   }
 }
 
-/* Decorative CSS preview (not an image, not an upload slot) */
-.project-preview {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  min-height: 190px;
-  padding: 1rem;
+.project-image {
+  aspect-ratio: 16 / 10;
   border-radius: 14px;
-  background: var(--g-100);
   border: 1px solid var(--g-200);
-}
-
-.preview-bar {
-  display: block;
-  height: 26px;
-  border-radius: 8px;
-  background: var(--g-900);
-}
-
-.preview-line {
-  display: block;
-  height: 12px;
-  width: 70%;
-  border-radius: 6px;
-  background: var(--g-400);
-}
-
-.preview-line--wide {
-  width: 92%;
-  background: var(--g-600);
-}
-
-.preview-line--short {
-  width: 45%;
-  background: var(--g-300);
-}
-
-.preview-dots {
-  display: flex;
-  gap: 0.4rem;
-  margin-top: auto;
-}
-
-.preview-dots i {
-  display: block;
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  background: var(--surface);
-  border: 1px solid var(--g-300);
-}
-
-.project-body h3 {
-  font-size: 1.4rem;
-}
-
-.coming-soon {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.6rem;
-  margin: 1.25rem 0 0;
-}
-
-.coming-soon .muted {
-  font-size: 0.92rem;
-}
-
-.coming-soon-pill {
-  padding: 0.25rem 0.8rem;
-  border-radius: 999px;
-  border: 1px dashed var(--g-600);
-  color: var(--g-900);
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: default;
 }
 
 .text-link {

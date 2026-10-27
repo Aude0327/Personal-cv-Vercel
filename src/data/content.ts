@@ -55,7 +55,7 @@ export const profile = {
   email: "audemarhyra@gmail.com",
   portrait: {
     // TODO: replace null with "/images/profile.jpg" after adding the file to public/images/
-    src: null,
+    src: "images/profile.jpg",
     alt: "Portrait of Aude Mar Hyra V. Busaco",
     label: "Portrait photo",
     initials: "AB",
@@ -94,7 +94,7 @@ export const education = [
     title: "Alternative Learning System (ALS)",
     school: "Educational pathway",
     detail:
-      "Continued her educational journey through the Alternative Learning System (ALS), following earlier studies at Stella Matutina Academy.",
+      "Continued my educational journey through the Alternative Learning System (ALS), following earlier studies at Stella Matutina Academy.",
   },
 ];
 
@@ -128,9 +128,6 @@ export const strengths = [
   "Willing to learn",
 ];
 
-/**
- * Ordering rule: dated roles first, most recent first; the role with no date is last.
- */
 export const experience: Experience[] = [
   {
     role: "Kakanin Seller",
@@ -159,18 +156,18 @@ export const experience: Experience[] = [
   },
   {
     role: "Warehouse / Store Experience",
-    period: "Date not specified",
+    period: "2017–2018",
     summary:
       "Assisted with daily operations in warehouse and tindahan environments, which strengthened my communication, organization, and customer service.",
   },
 ];
 
-/** Text-only cards. No certificates are claimed. Only the NSTP card has an image slot. */
+/** Text-only cards.*/
 export const achievements: Achievement[] = [
   {
     title: "Dancer of the Year",
     context: "Elementary, Grades 1–6",
-    period: "Exact years not specified",
+    period: "2007-2013",
   },
   {
     title: "Vocalist in a band",
@@ -180,15 +177,21 @@ export const achievements: Achievement[] = [
   {
     title: "Dancer participant, Bytefest",
     context: "Davao del Norte State College",
-    period: "2024",
+    period: "2023",
+        image: {
+      src: "images/dance-bytefest.png",
+      alt: "Photo from the bytefest dance performance, 2023",
+      label: "Bytefest dance performance photo",
+      objectFit: "cover",
+      objectPosition: "center",
+    },
   },
   {
     title: "NSTP Feeding Program",
     context: "Community activity",
     period: "May 2024",
     image: {
-      // TODO: replace null with "/images/nstp-feeding.jpg" after adding the file to public/images/
-      src: null,
+      src: "images/NSTP-feeding.JPG",
       alt: "Photo from the NSTP Feeding Program, May 2024",
       label: "NSTP Feeding Program photo",
       objectFit: "cover",
@@ -199,13 +202,18 @@ export const achievements: Achievement[] = [
 
 export const project = {
   title: "Personal CV Website",
-  status: "In development",
+  status: "Finished project",
+  image: {
+    src: "/images/SS-personal-cv.png",
+    alt: "Screenshot of the personal CV website project",
+    label: "Personal CV Website photo",
+    objectFit: "cover",
+    objectPosition: "center top",
+  } as ImageSlotData,
   description:
-    "This personal CV website, built as a course assignment. It is still a work in progress.",
-  builtWith: ["React", "TypeScript", "Vite", "CSS"],
-  // Leave null until the repository is public. Then set to e.g. "https://github.com/Aude0327/personal-cv-profile2"
-  repoUrl: null as string | null,
-  comingSoonNote: "GitHub repository link will be added after publication.",
+    "This personal CV website, built as a course assignment and published on GitHub.",
+  builtWith: ["HTML", "JavaScript", "CSS"],
+  repoUrl: "https://github.com/Aude0327/personal-cv",
 };
 
 export const links: LinkCard[] = [

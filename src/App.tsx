@@ -104,7 +104,7 @@ export default function App() {
           id="experience"
           kicker="04 · Experience"
           title="Experience"
-          intro="Dated roles first, most recent at the top. The role without a date is listed last."
+          intro="Dated roles first, most recent at the top."
         >
           <ul className="grid grid--2 plain" aria-label="Experience">
             {experience.map((item, index) => (
@@ -125,17 +125,7 @@ export default function App() {
         <Section id="projects" kicker="05 · Projects" title="Projects" tone="mint">
           <Reveal>
             <article className="card project-card">
-              <div className="project-preview" aria-hidden="true">
-                <span className="preview-bar" />
-                <span className="preview-line preview-line--wide" />
-                <span className="preview-line" />
-                <span className="preview-line preview-line--short" />
-                <span className="preview-dots">
-                  <i />
-                  <i />
-                  <i />
-                </span>
-              </div>
+              <ImageSlot image={project.image} className="project-image" />
               <div className="project-body">
                 <p className="badge badge--status">{project.status}</p>
                 <h3>{project.title}</h3>
@@ -145,17 +135,10 @@ export default function App() {
                     <li key={tech}>{tech}</li>
                   ))}
                 </ul>
-                {project.repoUrl ? (
                   <a className="text-link" href={project.repoUrl} target="_blank" rel="noopener noreferrer">
                     View repository on GitHub
                     <span className="sr-only"> (opens in a new tab)</span>
                   </a>
-                ) : (
-                  <p className="coming-soon">
-                    <span className="coming-soon-pill">Coming soon</span>
-                    <span className="muted">{project.comingSoonNote}</span>
-                  </p>
-                )}
               </div>
             </article>
           </Reveal>
@@ -165,7 +148,7 @@ export default function App() {
           id="achievements"
           kicker="06 · Achievements"
           title="Achievements and activities"
-          intro="Experiences I am proud of. These are activities and participation, not formal certificates."
+          intro="Experiences I am proud to be a part of."
         >
           <div className="grid grid--2">
             {achievements.map((item, index) => (

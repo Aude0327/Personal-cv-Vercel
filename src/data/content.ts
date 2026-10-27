@@ -6,15 +6,10 @@
 export interface ImageSlotData {
   /** Path inside /public (e.g. "/images/profile.jpg"). Keep null to show the placeholder. */
   src: string | null;
-  /** Describes the real photo once you add it. */
   alt: string;
-  /** Label shown on the placeholder while src is null. */
   label: string;
-  /** Letters shown in the portrait placeholder only. */
   initials?: string;
-  /** CSS object-fit for the real photo. */
   objectFit: "cover" | "contain";
-  /** CSS object-position for the real photo, e.g. "center top". */
   objectPosition: string;
 }
 
@@ -54,7 +49,6 @@ export const profile = {
   location: "Panabo City, Davao del Norte, Philippines",
   email: "audemarhyra@gmail.com",
   portrait: {
-    // TODO: replace null with "/images/profile.jpg" after adding the file to public/images/
     src: "images/profile.jpg",
     alt: "Portrait of Aude Mar Hyra V. Busaco",
     label: "Portrait photo",
@@ -67,7 +61,6 @@ export const profile = {
 export const intro =
   "I am a hardworking and adaptable 4th-year BSIT student with experience in small business, customer service, basic accounting, and office work. As a mother and entrepreneur, I have developed strong time-management, communication, problem-solving, and business skills.";
 
-// Written from the facts supplied. It is an aspiration, not a claim of advanced technical skill.
 export const careerObjective =
   "I am a 4th-year Information Technology student looking for an opportunity to apply what I am learning alongside my small-business, customer service and administrative experience. I am adaptable, organized and eager to learn, and I hope to build my technical skills while contributing reliably to a team.";
 
